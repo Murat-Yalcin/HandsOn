@@ -71,7 +71,7 @@ textarea{
     /* font-size: 2rem; */
 }
 
-#checkbox, #radio{
+#checkbox, #radio, #feedback1{
     margin-top: 40px;
 }
 
@@ -90,7 +90,7 @@ textarea{
 .form-submit{
     width: 160px;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 25px;
 
 }
 
