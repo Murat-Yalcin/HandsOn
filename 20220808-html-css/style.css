@@ -1,19 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@1&display=swap');
-
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body{
-    /* background-image: url(./images/netflix-background-image\ 1.png); */
+    background-image: url(./images/netflix-background-image\ 1.png);
+    color: white;0
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    height: 100vh
+
 }
 
 #container{
-    width: 1240px;
-    height: 1036px;
+    max-width: 1240px;
+    /* height: 1036px; */
     background-color: rgba(0, 0, 0, 0.3);
     margin: auto;
     margin-top: 30px;
@@ -33,6 +39,67 @@ span{
     /* color: white; */
 }
 
-header{
+#header{
     text-align: center;
+}
+
+textarea{
+    resize: none;
+}
+
+#survey-form-container{
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: auto;
+    padding: 30px 40px;
+
+}
+
+#name, 
+#age, 
+#email, 
+#dropdown, 
+#feedback{
+    width: 100%;
+    padding: 12px 10px;
+    margin-top: 10px;
+}
+
+.input-box{
+    margin-top: 10px;
+    font-family: Roboto-Regular;
+    /* font-size: 2rem; */
+}
+
+#checkbox, #radio{
+    margin-top: 40px;
+}
+
+#form-button{
+    width: 160px;
+    height: 45px;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: #ff0000;
+    
+
+}
+
+.form-submit{
+    width: 160px;
+    margin: auto;
+    margin-top: 15px;
+
+}
+
+#form-button:hover{
+    background-color: white;
+    color: #ff0000;
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(./fonts/Roboto-Regular.ttf);
 }
