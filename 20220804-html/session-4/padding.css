@@ -1,0 +1,33 @@
+.container{
+    background-color: lightsalmon;
+    padding: 5px;
+    /* margin collapsing’i engellemek için container'a padding ve/veya border vermek gerekiyor */
+
+
+
+}
+
+.div1{
+    background-color: brown;
+    width: 150px;
+    height: 150px;
+    margin-top: 100px;
+
+}
+
+.div2{
+    box-sizing: border-box;
+    background-color: aqua;
+    width: 150px;
+    height: 150px;
+    border: 3px solid blue;
+    /* margin: 10px; */
+    padding: 20px;
+    
+}
+
+.div3{
+    background-color: fuchsia;
+    width: 150px;
+    height: 150px;
+}

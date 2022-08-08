@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-image: url(./images/netflix-background-image\ 1.png); */
+}
+
+#container{
+    width: 1240px;
+    height: 1036px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: auto;
+}

@@ -1,0 +1,73 @@
+body{
+    background-color: rgb(243, 233, 255);
+    /* text-align: center; */
+}
+
+#header1{
+    text-align: center;
+    color: rgb(69, 51, 122);
+    font-size: 52px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#image1{
+    /* border: 2px solid red; */
+    text-align: center;
+}
+
+img{
+    width: 300px;
+    margin: 20px;
+}
+
+.card{
+    background-color: rgb(119, 74, 216);
+    color: white;
+    width: 750px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+
+}
+
+h2{
+    font-size: 24px;
+}
+
+p{
+    font-size: 18px;
+}
+
+ol{
+    text-decoration: none;
+    list-style-type: none;
+    text-align: left;
+    
+}
+
+/* #liste1{
+    border: 2px solid red;
+    /* text-align: left; */
+    /* margin-left: -20px; */
+} */
+
+li{
+    /* border: 2px solid red; */
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+    margin-left: -20px
+}
+
+.yellow{
+    color: orange;
+    border-left: 5px solid orange;
+}
+
+span{
+    background-color: yellow;
+    color: black;
+    border-radius: 5px;
+    padding: 2px;
+}

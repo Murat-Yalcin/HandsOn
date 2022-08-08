@@ -1,0 +1,33 @@
+.box1{
+    /* background-color: tomato; */
+    /* background-color: #ff0000; */
+    background-color: hsl(120, 100%, 50%);
+}
+
+.box2{
+    /* background-color: limegreen; */
+    /* background-color: #00ff00; */
+    background-color: hsl(120, 100%, 25%);
+}
+
+.box3{
+    /* background-color: darkgoldenrod; */
+    background-color: hsl(120, 100%, 0%);
+
+}
+
+.box4{
+    /* background-color: #a0f4c2; */
+    background-color: hsl(120, 100%, 90%);
+
+}
+
+.box5{
+    background-color: olive;
+}
+
+.box6{
+    /* background-color: magenta; */
+    background-color: rgba(140, 90, 30, 0.7);
+}
+

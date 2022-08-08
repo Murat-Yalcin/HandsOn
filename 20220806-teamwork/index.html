@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Clarusway Survey Form</h1>
+    <p>Thank you for taking the time to help us improve the platform.</p>
+    
+    <div class="container">
+        <form action="./result.html" method="get">
+            <div class="info">
+                <label for="name">Name</label>
+                <br>
+                <input type="text" name="name" id="name" class="input1" placeholder="Enter your name">
+                <br>
+                <label for="surname">Surname</label>
+                <br>
+                <input type="text" name="surname" id="surname" class="input1" placeholder="Enter your surname">
+                <br>
+                <label for="email">Email</label>
+                <br>
+                <input type="text" name="email" id="email" class="input1" placeholder="Enter your email">
+                <br>
+
+
+            </div>
+
+                <h3>Which option best describes your current role?
+                </h3>
+                <select name="current-role">
+                    <option value="none" selected disabled>Select current role</option>
+                    <option value="Student">Student</option>
+                    <option value="Teacher">Teacher</option>
+                    <option value="Full-time job">Full-time job</option>
+                    <option value="Part-time job">Part-time job</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+
+
+                </select>
+
+                <h3>Would you recommend Clarusway to a friend?</h3>
+                
+                <input type="radio" name="recommend" id="recommend1" value="yes">
+                <label for="recommend1">Definitely, yes.</label>
+                <br>
+
+                <input type="radio" name="recommend" id="recommend2" value="maybe">
+                <label for="recommend2">Maybe.</label>
+
+                <br>
+
+                <input type="radio" name="recommend" id="recommend3" value="notsure">
+                <label for="recommend3">Not sure.</label>
+
+                <br>
+                
+                <input type="radio" name="recommend" id="recommend4" value="notsure">
+                <label for="recommend4">Not sure.</label>
+
+                <br>
+
+                <h3>What is your favorite feature of Clarusway?</h3>
+                <select name="favorite">
+                    <option value="none" selected an option>Select an option</option>
+                    <option value="ourses">Students</option>
+                    <option value="Projects">Projects</option>
+                    <option value="Community">Community</option>
+                    <option value="Mentors">Mentors</option>
+                </select>
+
+                <h3>What would you like to see improved?</h3>
+                <input type="checkbox" name="frontend" id="frontend" value="frontend">
+                <label for="frontend">Front-end Projects</label>
+
+                <input type="checkbox" name="f" id="backend" value="backend">
+                <label for="backend">Back-end Projects</label>
+
+                <input type="checkbox" name="datascience" id="datascience" value="datascience">
+                <label for="datascience">Data Science</label>
+
+                <input type="checkbox" name="additional" id="additional" value="additional courses">
+                <label for="backend">Additional Courses</label>
+
+                <h3>Any comments or suggestions?</h3>
+
+                <textarea name="comments" id="comments" cols="50" rows="10" placeholder="Enter your comment here. Thank you for your support."></textarea>
+                <br>
+                <br>
+
+                <input type="submit" value="Submit">
+
+                <!-- <button type="submit" id="submit">Submit</button> -->
+
+                <br>
+                <br>
+                <br>
+
+                <button type="reset" id="reset">Reset</button>
+
+
+
+
+
+
+
+
+
+
+
+
+        </form>
+
+
+    </div>
+    
+</body>
+</html>

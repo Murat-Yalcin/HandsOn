@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(243, 233, 255);
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    margin: 50px 0;
+    /* margin ile üst kısımdan 50px boşluk bırakılmış*/
+   }
+   h1 {
+    font-size: 52px;
+    font-weight: 900;
+    color: rgb(69, 51, 122);
+    /*font-weight ile yazı kalınlaştırılmış*/
+   }
+   img {
+    margin: 20px;
+    width: 300px;
+    /*fotoğrafa margin ile her yerinden 20px boşluk verilmiş,width ile yükseklik verilmiş*/
+   }
+   .card {
+    padding: 20px 40px;
+    margin: 30px auto;
+    color: rgb(255, 255, 255);
+    background-color: rgb(119, 74, 216);
+    border-radius: 8px;
+    text-align: left;
+    width: 800px;
+    /*padding ile kutu ve content arasına üst ve alttan 20px,sol ve sağdan 40px boşluk.
+    yazı rengi ve arka plan rengi verilmiş.
+    width ile yükseklik verilmiş.*/
+   }
+   .card > h2 {
+    font-size: 24px;
+    /*card div inin içindeki h2 elemanı için font size */
+   }
+   .card > p {
+    font-size: 18px;
+    /*card div inin içindeki paragraf için font size */
+   }
+   .card ol {
+    list-style: none;
+    margin-left: -40px;
+    /*ordered list için list style ile başta yazması gereken sayılar ya da işaretler kaldırılmış.
+    margin left -40px ile sol taraftan içe doğru çekilmiş */
+   }
+   .card li {
+    margin: 10px 0;
+    font-size: 18px;
+    /*liste elemanlarına üst ve alttan 10px boşluk verilmiş,sol ve sağdan 0px verilmiş.
+    font size 18 yapılmış*/
+   }
+   .indent {
+    color: rgb(239, 216, 202);
+    border-left: 5px solid rgb(249, 202, 36);
+    padding-left: 10px;
+    margin-left: -6px;
+    /*text-indent= satır başında boşluk bırakmak için kullanılan css kodu.onu kullanmadan yukardaki şekilde verilmiş.
+    satır başındaki turuncu dikey çizgiyi yapmak için border left 5px ile sadece sol border oluşturulmuş.*/
+   }
+   .no-indent {
+    padding-left: 16px;
+    /*satır başı bırakmak istediği için soldan padding uygulamış*/
+   }
+   .mark {
+    padding: 2px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(254, 238, 175);
+    /*span etiketlerine verdiği mark class ı için bu kodlar kullanılmış
+    arka planları sarı yapılmış*/
+   }
+   a {
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(249, 202, 36);
+    border-radius: 8px;
+    font-weight: bold;
+    /*a href etiketi ile oluşturulan buton için content kısmının geniş gözükmesi padding 15px boşluk verilmiş.
+    display  ile inline olmaktan blok elemana çevirmiş.
+    text decoration none ile altındaki çizgiyi kaldırmış.
+    border radius ile kenarların sivriliğini yontmuş.
+    font weight bold ile yazıyı kalınlaştırmış. */
+   }
+   a:hover {
+    background-color: rgb(230, 202, 36);
+    /* hover fonksiyonu ile mouse imleci üstüne geldiğinde arka plan rengini değiştirmiş*/
+   }
+   
