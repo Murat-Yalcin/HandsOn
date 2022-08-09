@@ -49,10 +49,31 @@
 
 // console.log(typeof a)
 
-let x;
 
-do {
-    x = prompt('enter a Number: ')
-}while (isNaN(x));
+// NaN ve isNaN açıklaması: isNaN "eğer sayı değilse" koşulu
 
-console.log(x, x*x)
+// let x;
+
+// do {
+//     x = prompt('enter a Number: ')
+// }while (isNaN(x));
+
+// console.log(x, x*x)
+
+// 15 basamaktan daha uzun sayılarda doğruluk garantisi veremiyor. (Ondalık sayılarda virgülden sonraki 17 basamak)
+
+// let x = 12345678901234
+// let y = 123456789012341234
+// let z = 0.12345678901234567
+// let zz = 0.123456789012345675678
+
+// console.log({x})
+// console.log({y})
+
+// console.log({z})
+// console.log({zz})
+
+// floating point math hatası: 0.1 + 0.2 sonucu hata veriyor. düzeltmek için '.toFixed(2)' kullanıyoruz (virgülden sonraki haneyi iki basamak ile kısıtlıyor). çıkan değer string olacağı için + ile number yapıyoruz
+
+let g = 0.1 + 0.2
+console.log(+g.toFixed(2))
