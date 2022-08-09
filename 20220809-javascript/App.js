@@ -85,35 +85,35 @@
 
 // string için ",', ` kullanılır. dış tırnak ve iç tırnaklar farklı kullanılması gerekir. aynısı kullanılacaksa \ kullanılır. (escape character)
 
-let text = "He said, \"I am a new programmer\" then went out"
-console.log(text)
+// let text = "He said, \"I am a new programmer\" then went out"
+// console.log(text)
 
-let i = 'This \'is\' a string';
-let j = "This is a string"
-let k = `This is a string`
+// let i = 'This \'is\' a string';
+// let j = "This is a string"
+// let k = `This is a string`
 
-console.log(i, typeof i)
-console.log(j, typeof j)
-console.log(k, typeof k)
+// console.log(i, typeof i)
+// console.log(j, typeof j)
+// console.log(k, typeof k)
 
-// Dolarlı değişken'in ($degisken) çalışması için ` kullanmalıyız
-let userName = 'Musa'
-console.log(userName.length)
+// // Dolarlı değişken'in ($degisken) çalışması için ` kullanmalıyız
+// let userName = 'Musa'
+// console.log(userName.length)
 
-console.log('Merhaba', userName)
-console.log(`Merhaba ${userName}`)
+// console.log('Merhaba', userName)
+// console.log(`Merhaba ${userName}`)
 
-console.log(`2+3 = ${2+3}`)
+// console.log(`2+3 = ${2+3}`)
 
-// legth property iken concat method'dur
+// // legth property iken concat method'dur
 
-console.log(userName.concat('musa'))
+// console.log(userName.concat('musa'))
 
-// == eşit midir? anlamını taşıyor
-let x = 8 > 5;
-let y = 42 == 35; 
-console.log(`x = ${x}`)
-console.log(`y = ${y}`)
+// // == eşit midir? anlamını taşıyor
+// let x = 8 > 5;
+// let y = 42 == 35; 
+// console.log(`x = ${x}`)
+// console.log(`y = ${y}`)
 
 // Boolean("Hello World");
 // Boolean(5);
@@ -133,14 +133,42 @@ console.log(`y = ${y}`)
 // Boolean (2 > 3);     //return false 
 // Boolean (2 == 3);    //return false
 
-let n = ``
+// let n = ``
 
-let o = ' '
+// let o = ' '
 
-let p = 0
+// let p = 0
 
-console.log(Boolean(n))
-console.log(Boolean(o))
-console.log(Boolean(p))
-console.log(Boolean(3 > 5))
-console.log(Boolean(3 > 2))
+// console.log(Boolean(n))
+// console.log(Boolean(o))
+// console.log(Boolean(p))
+// console.log(Boolean(3 > 5))
+// console.log(Boolean(3 > 2))
+
+const myCar = {
+    make : 'ford',
+    model : 'Mustang',
+    year : 1965,
+    color : 'Black'
+  }
+
+  console.log(myCar)
+
+  myCar.color = 'green'
+
+  console.log(myCar)
+
+//   myCar = ford //bu işleme izin vermiyor const ile tanımlandığı için
+
+myCar.sunroof = false;
+
+console.log(myCar)
+
+myCar.age = function(current){
+    console.log(current - this.year)
+}
+
+myCar.age(2022)
+
+// banana döngüsü
+console.log(('b' + 'a' + + 'a' + 'a').toLowerCase())
