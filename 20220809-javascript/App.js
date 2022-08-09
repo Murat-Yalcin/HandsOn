@@ -75,5 +75,31 @@
 
 // floating point math hatası: 0.1 + 0.2 sonucu hata veriyor. düzeltmek için '.toFixed(2)' kullanıyoruz (virgülden sonraki haneyi iki basamak ile kısıtlıyor). çıkan değer string olacağı için + ile number yapıyoruz
 
-let g = 0.1 + 0.2
-console.log(+g.toFixed(2))
+// let g = 0.1 + 0.2
+// console.log(+g.toFixed(2))
+
+// büyük rakamların rahat okunabilmesi için _ kullanılır
+
+// let m = 1_000_000_000
+// console.log(m)
+
+// string için ",', ` kullanılır. dış tırnak ve iç tırnaklar farklı kullanılması gerekir. aynısı kullanılacaksa \ kullanılır. (escape character)
+
+let text = "He said, \"I am a new programmer\" then went out"
+console.log(text)
+
+let i = 'This \'is\' a string';
+let j = "This is a string"
+let k = `This is a string`
+
+console.log(i, typeof i)
+console.log(j, typeof j)
+console.log(k, typeof k)
+
+// Dolarlı değişken'in ($degisken) çalışması için ` kullanmalıyız
+let userName = 'Musa'
+
+console.log('Merhaba', userName)
+console.log(`Merhaba ${userName}`)
+
+console.log(`2+3 = ${2+3}`)
