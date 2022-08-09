@@ -98,8 +98,49 @@ console.log(k, typeof k)
 
 // Dolarlı değişken'in ($degisken) çalışması için ` kullanmalıyız
 let userName = 'Musa'
+console.log(userName.length)
 
 console.log('Merhaba', userName)
 console.log(`Merhaba ${userName}`)
 
 console.log(`2+3 = ${2+3}`)
+
+// legth property iken concat method'dur
+
+console.log(userName.concat('musa'))
+
+// == eşit midir? anlamını taşıyor
+let x = 8 > 5;
+let y = 42 == 35; 
+console.log(`x = ${x}`)
+console.log(`y = ${y}`)
+
+// Boolean("Hello World");
+// Boolean(5);
+// Boolean(-5);
+// Boolean("false");
+// Boolean('0');
+// Boolean(3.14 + 8);   //All of these values return true
+// Boolean("");
+// Boolean(0);
+// Boolean(-0);
+// Boolean(null);
+// let x;
+// Boolean(x);   //All of these values return false
+
+// Boolean (3 > 2);     //return true
+// Boolean (2 < 3);     //return true
+// Boolean (2 > 3);     //return false 
+// Boolean (2 == 3);    //return false
+
+let n = ``
+
+let o = ' '
+
+let p = 0
+
+console.log(Boolean(n))
+console.log(Boolean(o))
+console.log(Boolean(p))
+console.log(Boolean(3 > 5))
+console.log(Boolean(3 > 2))
