@@ -103,3 +103,8 @@ textarea{
     font-family: Roboto-Regular;
     src: url(./fonts/Roboto-Regular.ttf);
 }
+
+#first-radio,#second-radio,#third-radio,#first-check,#second-check,#third-check{
+    accent-color: red;
+    
+}
