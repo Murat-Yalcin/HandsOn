@@ -1,0 +1,52 @@
+.main{
+    width: 100%;
+    background-color:rgba(125, 231, 134, 0.726) ;
+    height: 1000px;
+    margin: 30px;
+    padding: 5px;
+    /* position: relative; */
+}
+
+.box1{
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    background-color: rgba(8, 38, 231, 0.801);
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(232, 232, 13, 0.753);
+    position: relative;
+    /* top: 20px;
+    left: 30px; */
+}
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(229, 7, 214, 0.721);
+    /* position: absolute; */
+    top: 20px;
+    left: 80px;
+}
+
+#icerde{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    font-size: .5rem;
+    color: yellow;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#icerde2{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 0, 0);
+    font-size: .5rem;
+    color: yellow;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
