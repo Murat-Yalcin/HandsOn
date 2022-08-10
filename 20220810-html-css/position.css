@@ -4,7 +4,7 @@
     height: 1000px;
     /* margin: 30px; */
     padding: 5px;
-    /* position: relative; */
+    position: relative;
     margin-top: 50px;
 }
 
@@ -41,7 +41,7 @@
     left: 80px; */
     position: relative;
     left: 0;
-    bottom: 65px;
+    /* bottom: 65px; */
     z-index: 50;
 }
 
@@ -68,7 +68,7 @@
 
 #paragraf{
     background-color: coral;
-    position: sticky;
+    position:fixed;
     top: 0px;
     left: 0;
 }
