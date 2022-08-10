@@ -8,11 +8,18 @@
     <style>
         ul{
             /* padding-left: 5px; */
+            /* list-style-type: none; */
         }
         .item{
             /* list-style-type: georgian; */
             /* list-style-position: inside; */
-            list-style-type: "💖";
+            /* list-style-type: "💖\1F680"; */
+            list-style-image: url(./images/rocket.png);
+        }
+        li::before{
+            /* content: "\2764";
+            color: tomato;
+            padding-right: 10px; */
         }
     </style>
 </head>
