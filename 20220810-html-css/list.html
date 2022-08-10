@@ -20,12 +20,14 @@
             /* content: "\2764";
             color: tomato;
             padding-right: 10px; */
+            
         }
 
         ol{
             list-style-type: none;
             margin: 5px;
             padding: 5px;
+            /* display: flex; */
         }
 
         ol li{
@@ -38,6 +40,20 @@
             color: brown;
             width: 15rem;
             /* display: inline-block; */
+            
+            
+
+        }
+
+        ol li::before{
+            content: "🌶️";
+        }
+
+        ol li:hover{
+            background-color: gray;
+            color: lightgreen;
+            border-left: 7px solid lightgreen;
+            cursor: pointer;
         }
     </style>
 </head>
