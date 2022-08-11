@@ -19,3 +19,25 @@ not terse çevirir.
 
 and operatöründe ilk false bulduğu anda devre kırıcı çalışır ve ilk değeri gösterir.
 or operatöründe ilk true değeri bulduğu anda devre kırıcı çalışır ve ilk değeri gösterir.
+
+
+Hoşgeldiniz ......., xyx Bankası iyi günler diler:
+
+let user2 = Müşterimiz
+
+let selamlama = `Hoşgeldiniz ${userName}, xyx Bankası iyi günler diler!`;
+
+let username = (userName == undefined) && 'Müşterimiz';
+
+let selamlama2 = 'Hoşgeldiniz ' + user2 + ', xyx Bankası iyi günler diler!';
+
+
+Soğuk hava deposu örneği: termometre değeri null veya undefined gelirse sorun var, sıfır geliyorsa normal.
+
+let userName
+userName
+let temp = 0;
+let hataDurumu = temp || `termometre arizasi`;
+hataDurumu // undefined sonucu verir
+let hataDurumu = temp ?? `termometre arizasi`;
+hataDurumu // 0 sonucu verir
