@@ -45,3 +45,42 @@ console.log('app js running');
 // const fToCel = ((fTemp - 32) * 5) / 9;
 // console.log(`${fTemp}°F equals  ${fToCel.toFixed(2)}°C`);
 
+/*
+ * 4. print today's date separately :8min
+ * day of month is 11
+ * month of year is 8
+ * year is 2022
+ */
+// const today = new Date();
+// console.log(today);
+
+// console.log(today.getFullYear());
+// // * use today (.) for needed functions
+
+// console.log(`day of month is ${today.getDate()}`);
+// console.log(`month of year is ${today.getMonth() + 1}`);
+// console.log(`year is ${today.getFullYear()}`);
+
+/*
+
+* 5. check from three given numbers (non negative integers) that two or all of them have the same rightmost digit. : 10min
+
+* 22 32 42 => true
+* 15 24 45 => true
+* 33 34 35 => false
+
+*/
+
+/*
+stage is yours
+There are at least 2 numbers having same first digit: true/false
+
+*/
+
+let p = +prompt('Enter first number');
+let q = +prompt('Enter second number');
+let r = +prompt('Enter third number');
+
+const result = p % 10 === q % 10 || p % 10 === r % 10 || q % 10 === r % 10;
+
+console.log(`There are at least 2 numbers having same first digit: ${result}`);
