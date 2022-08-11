@@ -1,0 +1,21 @@
+MANTIKSAL OPERATÖRLER   
+AND      &&      ve          (ampersan)
+ OR      ||      veya        (pipe)
+NOT      !       değildir    (negation)
+and false hassastır. 
+true1   &&  true2       --> true2  false bulamadı en son true'yu return etti
+true    &&  false       --> false  ilk false aldı
+false1  &&  false2     --> false1  ilk false aldı
+false   &&  true       --> false   ilk false aldı.
+or true hassastır. 
+true1   ||  true2       --> true1  ilk true'yu alır
+true    ||  false       --> true  ilk false aldı
+false1  ||  false2     --> false2 true bulamadı en son false aldı 
+false   ||  true       --> true   ilk true aldı.
+not terse çevirir.
+!false                  --> true
+!true                   --> false
+
+
+and operatöründe ilk false bulduğu anda devre kırıcı çalışır ve ilk değeri gösterir.
+or operatöründe ilk true değeri bulduğu anda devre kırıcı çalışır ve ilk değeri gösterir.
