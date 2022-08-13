@@ -4,7 +4,7 @@
 
 body{
     height: 100vh;
-    background-color: rgb(129, 87, 37);
+    /* background-color: rgb(129, 87, 37); */
 }
 .abs{
     background-color: aqua;
@@ -20,10 +20,21 @@ body{
 .div3{
     background-color: yellow;
     width: 50%;
-    height: 50vh;
+    height: 20vh;
 }
 
 .div4{
     background-color: magenta;
     width: 50vw;
+}
+.div5{
+    font-size: 1em; /*16 px */
+}
+
+.div6{
+    font-size: 2em; /*32 px */
+}
+
+.div7{
+    font-size: 0.5em; /*96 px */
 }
