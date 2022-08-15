@@ -1,0 +1,3 @@
+const sayi = number(prompt("Bir sayi giriniz:"))
+
+prompt önüne artı koymak yerine "number" yazarak da girilen değeri number yapabiliriz.
