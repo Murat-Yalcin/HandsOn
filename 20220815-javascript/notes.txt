@@ -1,3 +1,10 @@
 const sayi = number(prompt("Bir sayi giriniz:"))
 
-prompt önüne artı koymak yerine "number" yazarak da girilen değeri number yapabiliriz.
+prompt önüne artı koymak yerine "Number" yazarak da girilen değeri number yapabiliriz.
+
+
+If(kosul) => If(kosul == true) anlamına gelir
+
+
+Niçin switch case kullanılır?
+çok fazla if else koşulu varsa yapı uzar. eğer koşul sayısı fazlaysa görüntü olarak ve anlaşılabilirlik olarak daha iyi olan switch-case kullanılır.
