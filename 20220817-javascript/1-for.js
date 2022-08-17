@@ -41,23 +41,27 @@ console.log("Sonuc:", toplam); */
 //? ÖRNEK: Girilen bir sayinin Asal olup olmadigini yazdiran kodu
 //? for dongulerini kullanarak yaziniz.
 
-const sayi = Number(prompt("Pozitif bir sayi giriniz:"))
-// bu yönteme bayrak yöntemi deniyor. bayrak 1'e kuruldu. kodun devamında gerektiğinde 0'a kurulacak
-let asal = true; 
-if (sayi <= 1) {
-    alert("Sayi 1'den buyuk olmalidir")
-} else {
-    for (let i=2; i<sayi; i++){
-       if (sayi % i === 0){
-            asal = false
-            break;
-       }
+// const sayi = Number(prompt("Pozitif bir sayi giriniz:"))
+// // bu yönteme bayrak yöntemi deniyor. bayrak 1'e kuruldu. kodun devamında gerektiğinde 0'a kurulacak
+// let asal = true; 
+// if (sayi <= 1) {
+//     alert("Sayi 1'den buyuk olmalidir")
+// } else {
+//     for (let i=2; i<sayi; i++){
+//        if (sayi % i === 0){
+//             asal = false
+//             break;
+//        }
        
-    }
-    const sonuc = asal === true ? "Asaldir" : "Asal degildir;"
-    console.log(`${sayi} ${sonuc}`);
-}
+//     }
+//     const sonuc = asal === true ? "Asaldir" : "Asal degildir;"
+//     console.log(`${sayi} ${sonuc}`);
+// }
 
 
 /* ya da üç eşit kullanmadan asal değişkeninin true varsayılması özelliğini kullanarak:
 const sonuc = asal ? "Asaldir" : "Asal degildir" */
+
+// * ============================================
+// *            DONGULER(LOOPS)- WHILE
+// * ============================================
