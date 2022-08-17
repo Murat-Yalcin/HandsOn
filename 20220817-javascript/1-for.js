@@ -62,6 +62,3 @@ console.log("Sonuc:", toplam); */
 /* ya da üç eşit kullanmadan asal değişkeninin true varsayılması özelliğini kullanarak:
 const sonuc = asal ? "Asaldir" : "Asal degildir" */
 
-// * ============================================
-// *            DONGULER(LOOPS)- WHILE
-// * ============================================
