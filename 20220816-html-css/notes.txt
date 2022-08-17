@@ -1,3 +1,6 @@
 1. yukarıdan aşağıya doğru
 2. external- internal- inline
 3. html-class- id
+
+*** nav.acilir-menu ile nav  .acilir-menu (boşluklu)farkını bir daha analatabilir misiniz ?
+Cevap: Boşluklu olduğunda "nav elementi içerisinde class'ı acilir-menu olan element" anlamına gelir. Boşluksuz olduğunda ise "class'ı acilir-menu olan nav elementi" anlamına gelir.
