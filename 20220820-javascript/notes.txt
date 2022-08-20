@@ -1,0 +1,1 @@
+return komutu fonskiyonun işlem sonucunu verir. (hesap makinelerinde işlem sonrası eşittire basıp m'ye kaydetmek gibi)
