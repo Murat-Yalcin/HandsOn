@@ -25,39 +25,36 @@ body {
   color: $fontColor;
 }
 
-//*********** HEADER *********//
-
+//*******  HEADER *********/
 header {
   background-color: $navBgColor;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
   img {
     width: 80px;
     border: $myBorder;
     border-radius: 10px;
-    margin: 1rem;
   }
   ul {
     list-style-type: none;
     li {
       display: inline-block;
       padding: 0.5rem;
+      //! içinde bulundğumuz elementi refere etmek için & işareti kullanılır.
       &:hover {
         text-decoration: underline;
       }
     }
-    // li:hover {
-    //   text-decoration: underline;
+  }
+  a {
+    color: $fontColor;
+    text-decoration: none;
   }
 }
-a {
-  color: $fontColor;
-  text-decoration: none;
-  // padding: 0.5rem;
-}
 
-//****** BANNER ****/
+//*******  BANNER *********/
 .banner {
   display: flex;
   justify-content: space-between;
@@ -83,5 +80,65 @@ a {
     width: 30%;
     min-width: 250px;
     max-width: 400px;
+  }
+}
+
+//*******  CARDS  *********/
+//*****************
+//! @MIXIN
+//*****************
+
+@mixin myBox($backColor, $color) {
+  background-color: $backColor;
+  color: $color;
+  width: 25%;
+  height: 15rem;
+  border: $myBorder;
+  border-radius: 5px;
+}
+
+.cards {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  .card1 {
+    @include myBox(green, white);
+  }
+  .card2 {
+    @include myBox(brown, white);
+  }
+  .card3 {
+    @include myBox(yellow, black);
+  }
+  .card4 {
+    @include myBox(rgb(40, 33, 56), white);
+  }
+}
+
+//*******  ARTICLES *********/
+
+//*****************
+//! @EXTEND
+//*****************
+
+.articles {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+
+  .article1 {
+    background-color: grey;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 10rem;
+
+    // margin-right: 1rem;
+  }
+
+  .article2 {
+    @extend .article1;
+    background-color: hotpink;
+    border-color: green;
   }
 }
