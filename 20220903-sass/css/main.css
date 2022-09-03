@@ -1,7 +1,69 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: none;
+  box-sizing: border-box;
+}
+
+.nav {
+  padding: 1rem;
+  height: 10vh;
+}
+.nav__list {
+  text-align: right;
+}
+.nav__item {
+  display: inline;
+  padding: 1rem;
+}
+.nav__link {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 1s;
+}
+.nav__link:hover {
+  color: blue;
+}
+.nav__link--active {
+  color: #ff652f;
+}
+
+.home-bgImg-container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.home {
+  border: 2px solid red;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.home__name {
+  font-size: 5rem;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+  color: #eee;
+  background-color: #272727;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #eee;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=main.css.map */
