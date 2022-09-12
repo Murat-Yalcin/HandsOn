@@ -43,6 +43,7 @@ document.getElementById("btn").addEventListener("click", function () {
     : alert(`${input.value} entered`);
 
   input.value = "";
+  document.querySelector("#input").focus();
 });
 
 //* EXAMPLE-3
@@ -64,8 +65,8 @@ list.forEach((li) => {
   };
 });
 
-//* EXAMPLE-4
-
+//* EXAMPLE-4 (onload)
+//* -------------------------------------------------
 window.onload = function () {
   document.querySelector("#input").focus();
 };
@@ -73,3 +74,5 @@ window.onload = function () {
 const print = () => {
   console.log("Starting");
 };
+
+print();
