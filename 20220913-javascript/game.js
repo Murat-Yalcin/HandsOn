@@ -29,19 +29,36 @@ document.querySelector(".check-btn").addEventListener("click", () => {
       document.querySelector(".top-score").textContent = topScore;
     }
     document.querySelector(".secret-number").textContent = randomNumber;
+
+    //! eger rasgele!= input.value
   } else {
     score--;
     if (score > 0) {
       guessInput > randomNumber
-        ? (msg.innerText = "DECREASE")
-        : (msg.innerText = "INCREASE");
+        ? (msg.innerHTML = `<i class="fa-solid fa-arrow-trend-down fa-2x"></i> DECREASE `)
+        : (msg.innerHTML = `<i class="fa-solid fa-arrow-trend-up fa-2x"></i> INCREASE `);
     } else {
-      msg.innerText = "You Lost";
+      msg.innerHTML = `You Lost <i class="fa-regular fa-face-sad-tear fa-2x"></i>`;
+      document.querySelector(".secret-number").textContent = randomNumber;
+      body.className = "bg-danger";
       document.querySelector(".check-btn").disabled = true;
     }
 
     document.querySelector(".score").textContent = score;
   }
+});
+
+//* again basildiginda oyunu baslangic dgerlerin kur
+document.querySelector(".again-btn").addEventListener("click", () => {
+  score = 10;
+  document.querySelector(".score").textContent = score;
+  const randomNumber = Math.round(Math.random() * 100);
+  document.querySelector(".secret-number").textContent = "?";
+  console.log(randomNumber);
+  document.querySelector(".check-btn").disabled = false;
+  document.querySelector("body").classList.remove("bg-success", "bg-danger");
+  document.querySelector(".guess-input").value = "";
+  document.querySelector(".msg").innerText = `Starting...`;
 });
 
 //? eger score > topScore
@@ -59,3 +76,13 @@ document.querySelector(".check-btn").addEventListener("click", () => {
 //? Uzgunuz kaybetiniz.
 
 //* againBtn basildiginda kontrolleri yap
+
+myObj = { a: 1, b: 2, c: 3 };
+
+localStorage.setItem("OBJ", JSON.stringify(myObj));
+
+const readObj = localStorage.getItem("OBJ");
+const readOBJ = JSON.parse(localStorage.getItem("OBJ"));
+console.log(typeof readObj);
+console.log(typeof readOBJ);
+console.log(readOBJ);
