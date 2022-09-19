@@ -83,9 +83,14 @@ todoUl.addEventListener("click", (e) => {
   const id = e.target.parentElement.getAttribute("id");
   //! event, bir delete butonundan geldi ise
   if (e.target.classList.contains("fa-trash")) {
+    //? delete butonunun parent'ini DOM'dan sil
     e.target.parentElement.remove();
 
-    todos = todos.filter((todo) => todo.id !== id);
+    //? Dizinin ilgili elementini sil
+    todos = todos.filter((todo) => todo.id !== Number(id));
+
+    //? todos dizisinin son halini localStorage'e sakla
+    localStorage.setItem("TODOS", JSON.stringify(todos));
   } else if (e.target.classList.contains("fa-check")) {
     //! event, bir okey butonundan geldi ise
     //? ilgili li elementinde checked adinda bir class'i varsa bunu sil
