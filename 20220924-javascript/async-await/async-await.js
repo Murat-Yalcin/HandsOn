@@ -21,7 +21,7 @@
 let isError = false;
 
 const getNews = async function () {
-  const API_KEY = "3d8995c78642428c9d7b67983ebd64f8";
+  const API_KEY = "55e3f1fdc1c94581b6b11537c9b8f8bf";
   const url =
     "https://newsapi.org/v2/top-headlines?country=tr&apiKey=" + API_KEY;
 

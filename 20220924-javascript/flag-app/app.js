@@ -2,7 +2,7 @@
 //*                     FLAG-APP
 //*=========================================================
 
-const fetchCountryByName = () => {
+const fetchCountryByName = (name) => {
   const url = `https://restcountries.com/v3.1/name/${name}`;
   fetch(url)
     .then((res) => {
@@ -19,29 +19,56 @@ const fetchCountryByName = () => {
 const renderError = () => {
   const countryDiv = document.querySelector(".countries");
   countryDiv.innerHTML += `
-    <h2>Countries cannot be fetched</h2>
+    <h2>Countries can not fetched</h2>
     <img src="./img/404.png" alt="" />
-    `;
+  `;
 };
 
 const renderCountries = (data) => {
   console.log(data);
   const countryDiv = document.querySelector(".countries");
-  const { capital, currencies, flags, languages, name } = data;
+  const {
+    capital,
+    currencies,
+    flags: { svg },
+    languages,
+    name: { common },
+    region,
+  } = data[0];
 
-  countryDiv.innerHTML = `
-    <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-  </ul>
-</div>
-    `;
+  console.log(Object.values(languages));
+  console.log(Object.values(currencies)[0].name);
+  console.log(Object.values(currencies)[0].symbol);
+
+  countryDiv.innerHTML += `
+    <div class="card mx-auto m-3 shadow-lg" style="width: 18rem;">
+      <img src="${svg}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">${common}</h5>
+        <p class="card-text">${region}</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <i class="fas fa-lg fa-landmark"></i> ${capital}
+        </li>
+        <li class="list-group-item">
+          <i class="fas fa-lg fa-comments"></i> ${Object.values(languages)}
+        </li>
+        <li class="list-group-item">
+          <i class="fas fa-lg fa-money-bill-wave"></i>
+          ${Object.values(currencies).map((item) => Object.values(item) + " ")}
+       </li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+    </div>
+
+
+  `;
 };
+
 fetchCountryByName("turkey");
+fetchCountryByName("western sahara");
+fetchCountryByName("south africa");
