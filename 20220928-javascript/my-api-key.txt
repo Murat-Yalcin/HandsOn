@@ -1,0 +1,4 @@
+localStorage.setItem(
+  "tokenKeyEncrypted",
+  EncryptStringAES("004abdd1e61d6c874a86d548d4429738")
+);
