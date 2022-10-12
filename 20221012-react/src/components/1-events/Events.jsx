@@ -50,7 +50,6 @@ const Events = () => {
       {/* <button onClick={(e) => handleChange(e)} className="btn btn-danger">
         Change
       </button> */}
-
     </div>
   );
 };
