@@ -14,8 +14,7 @@ const KeyboardClipboard = () => {
 
   const handleAreaPaste = (e) => {
     e.target.style.border = "2px solid red";
-    console.log(e.target.value);
-    e.target.value = e.clipboardData.getData("text").toLocaleUpperCase();
+    e.target.value += e.clipboardData.getData("text").toLocaleUpperCase();
     e.preventDefault();
   };
 
@@ -42,11 +41,11 @@ const KeyboardClipboard = () => {
       >
         {inputValue}
       </p>
+
       <textarea
         className="form-control"
         name="area"
         id="area"
-        cols="30"
         rows="10"
         onPaste={handleAreaPaste}
       ></textarea>
