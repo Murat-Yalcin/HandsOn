@@ -24,7 +24,7 @@ const User = () => {
       </h1>
       <img className="rounded-circle" src={picture?.large} alt="img" />
       <p>{email}</p>
-      <h5>{dob?.date}</h5>
+      <h5>{new Date(dob?.date).toLocaleDateString()}</h5>
       <button className="btn btn-danger" onClick={getUser}>
         Get User
       </button>
