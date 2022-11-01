@@ -1,3 +1,4 @@
+import { getDefaultNormalizer } from "@testing-library/react";
 import React from "react";
 import "./Header.style";
 import {
@@ -6,14 +7,19 @@ import {
   FormContainer,
   HeaderContainer,
   MainHeader,
+  Select,
 } from "./Header.style";
 
-const Header = ({ setQuery }) => {
+const Header = ({ setQuery, setSelectedMeal, mealType }) => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    getdata();
+  };
   return (
     <HeaderContainer>
       <MainHeader>Recipe App</MainHeader>
 
-      <FormContainer>
+      <FormContainer onSubmit={handleSubmit}>
         <FoodInput
           type="text"
           placeholder="Search"
@@ -21,12 +27,20 @@ const Header = ({ setQuery }) => {
         />
 
         <Button type="submit">SEARCH</Button>
-      
-      <Select name="mealType" id="mealType"
-      onChange={(e)=>setQuery(e.target.value)}
-      >
-        
-      </Select>
+
+        <Select
+          name="mealType"
+          id="mealType"
+          onChange={(e) => setSelectedMeal(e.target.value)}
+        >
+          {mealType.map((meal, index) => {
+            return (
+              <option key={index} value={meal}>
+                {meal}
+              </option>
+            );
+          })}
+        </Select>
       </FormContainer>
     </HeaderContainer>
   );
