@@ -4,6 +4,7 @@ import TextFieldComp from "../components/TextFieldComp";
 import TypoButtons from "../components/TypoButtons";
 import { createTheme, ThemeProvider } from "@mui/material";
 import { teal } from "@mui/material/colors";
+import MakeStylesComp from "../components/MakeStylesComp";
 
 const Home = () => {
   const theme = createTheme({
@@ -24,6 +25,7 @@ const Home = () => {
       <TypoButtons />
       <TextFieldComp />
       <CardGrid />
+      <MakeStylesComp />
     </ThemeProvider>
   );
 };
