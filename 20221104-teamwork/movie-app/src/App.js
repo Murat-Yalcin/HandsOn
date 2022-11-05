@@ -1,8 +1,8 @@
 import { useState } from "react";
 import {
   createUserWithEmailAndPassword,
-  onAuthStateChanged,
   signInWithEmailAndPassword,
+  onAuthStateChanged,
   signOut,
 } from "firebase/auth";
 import "./App.css";
@@ -11,7 +11,7 @@ import { auth } from "./firebase-config";
 function App() {
   const [registerEmail, setRegisterEmail] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
-  const [LoginEmail, setLoginEmail] = useState("");
+  const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
 
   const [user, setUser] = useState({});
@@ -37,7 +37,7 @@ function App() {
     try {
       const user = await signInWithEmailAndPassword(
         auth,
-        LoginEmail,
+        loginEmail,
         loginPassword
       );
       console.log(user);
@@ -53,7 +53,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <h3>Register User</h3>
+        <h3> Register User </h3>
         <input
           placeholder="Email..."
           onChange={(event) => {
@@ -67,11 +67,11 @@ function App() {
           }}
         />
 
-        <button onClick={register}>Create User</button>
+        <button onClick={register}> Create User</button>
       </div>
 
       <div>
-        <h3>Login</h3>
+        <h3> Login </h3>
         <input
           placeholder="Email..."
           onChange={(event) => {
@@ -85,11 +85,13 @@ function App() {
           }}
         />
 
-        <button onClick={login}>Login</button>
+        <button onClick={login}> Login</button>
       </div>
-      <h4>User Logged In</h4>
+
+      <h4> User Logged In: </h4>
       {user?.email}
-      <button onClick={logout}>Sign Out</button>
+
+      <button onClick={logout}> Sign Out </button>
     </div>
   );
 }
