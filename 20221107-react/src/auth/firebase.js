@@ -45,8 +45,9 @@ export const createUser = async (email, password, navigate, displayName) => {
       displayName: displayName,
     });
     navigate("/");
-    toastSuccessNotify("Registered successfully!");
-    console.log(userCredential);
+    toastSuccessNotify(
+      `Registered successfully! Welcome ${auth.currentUser.displayName} 🤗`
+    );
   } catch (error) {
     alert(error.message);
   }
@@ -59,7 +60,9 @@ export const signIn = async (email, password, navigate) => {
   try {
     await signInWithEmailAndPassword(auth, email, password);
     navigate("/");
-    toastSuccessNotify("Logged in successfully!");
+    toastSuccessNotify(
+      `Logged in successfully! Welcome ${auth.currentUser.displayName} 🤗`
+    );
   } catch (error) {
     alert(error.message);
   }
