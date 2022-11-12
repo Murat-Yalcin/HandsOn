@@ -30,6 +30,8 @@ const app = initializeApp(firebaseConfig);
 // Initialize Firebase Authentication and get a reference to the service
 const auth = getAuth(app);
 
+// console.log(process.env.NODE_ENV);
+
 export const createUser = async (email, password, navigate, displayName) => {
   //? yeni bir kullanıcı oluşturmak için kullanılan firebase metodu
   try {
