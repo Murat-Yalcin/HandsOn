@@ -86,11 +86,6 @@ print(person2.company) """
     def test():
         print("test")
         
-# person1 = Person()
-# person2 = Person()
-# person1.test()  # bu komut pythonda Person.test(person1) olarak calisir. instancelara ozgu olmasi icin self vb bir parametre ekliyoruz
-# person2.test()
-        
     def set_details(self, name, age):
         self.name = name
         self.age = age
