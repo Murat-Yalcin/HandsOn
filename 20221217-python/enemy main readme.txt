@@ -1,0 +1,1 @@
+oyun amacli yazilmis kod
