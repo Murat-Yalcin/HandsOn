@@ -258,7 +258,7 @@ class Employe(Person, Lang):
     
     def __init__(self, name, age, path, langs):
         super().__init__(name, age)
-        Lang.__init__(self, langs)
+        Lang.__init__(self, langs) # birden fazla class'tan cagrilacaksa (inherit) self kullaniliyor
         self.path = path
         
     def get_details(self):
@@ -281,12 +281,12 @@ emp1 = Employe("barry", 20, "FS", "Javascript")
 
 #? other topics
 
-# print(Employe.mro()) #mro: method resolution order
-# print(help(Employe))
-# print(emp1.__dict__)
+# print(Employe.mro()) #mro: method resolution order / kalitim zinciri
+# print(help(Employe)) # tum bilgileri ve ozellikleri verir - cikmak icin :q kullan
+# print(emp1.__dict__) # instance bilgilerini verir
 
-# print(isinstance(emp1, Employe))
-# print(issubclass(Lang, Person))
+# print(isinstance(emp1, Employe)) # emp1 instance i Employe classindan mi uretildi sorusuna cevap verir
+# print(issubclass(Lang, Person)) # 1, 2'nin subclassi mi
 
 # getattr(instance, attribute) : returns attribute value of instance
 # setattr(instance, attribute, new value) : update attribute of instance
