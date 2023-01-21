@@ -30,8 +30,8 @@ services:
     volumes:
       - pg_data:/var/lib/postgresql/data/
     environment:
-      - POSTGRES_USER=henry
-      - POSTGRES_PASSWORD=Aa123
+      - POSTGRES_USER=yalcinmurat
+      - POSTGRES_PASSWORD=Qw123456
       - POSTGRES_DB=docker_django
 
 volumes:
