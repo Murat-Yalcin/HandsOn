@@ -3,15 +3,14 @@
 FROM python:3.10.8-slim-bullseye
 
 ENV PYTHONUNBUFFERED=1
-
 ENV PYTHONDONTWRITEBYTECODE=1
 
-WORKDIR /code
+WORKDIR /dockerize
 
-COPY requirements.txt /code/requirements.txt
+COPY . .
 
-RUN pip install --no-cache-dir -r requirements.txt
+EXPOSE 8000
 
-COPY . /code
+RUN pip install -r requirements.txt
 
 CMD [ "python", "manage.py", "runserver", "0.0.0.0:8000" ]
