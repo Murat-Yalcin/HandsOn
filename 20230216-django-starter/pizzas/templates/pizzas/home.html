@@ -3,9 +3,8 @@
 
 {% block content %}
  
-<h1>homepage</h1>
 
-    {% comment %} <div class="homeImage">
+    <div class="homeImage">
         {% if messages %} 
         {% for message in messages %} 
             {% if message.tags == "warning" %}
@@ -17,7 +16,8 @@
         {% endif %}
 
     </div>
- {% endcomment %}
+
         
 
 {% endblock content %}
+    
