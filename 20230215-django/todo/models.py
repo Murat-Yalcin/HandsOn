@@ -5,7 +5,7 @@ priority_choices=[
     (3,'Low'),
 ]
 status_choices=[
-    ('c','complated'),
+    ('c','completed'),
     ('w','waiting'),
     ('p','on progress'),
 ]
